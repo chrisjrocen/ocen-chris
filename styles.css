@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+li {
+    display: inline; /*Makes a horizontal navbar**/
+}
+
+li a {
+    color: #000;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+body {
+    margin: 5% 5% 0 5%;
+}
+
+.container {
+    margin: 5%;
+    padding: 5%;
+    background-color: blue;
+}
+
+footer {
+    text-align: center;
+    background-color: #555;
+}
