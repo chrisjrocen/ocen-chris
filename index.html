@@ -1,61 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="#welcome">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  
-  <main>
-    <section id="welcome" class="section">
-      <div class="container">
-        <h1>John Doe</h1>
-        <img src="./images/Ocen-Christopher.png" alt="Profile Picture" class="profile-img">
-        <p>Hi, I'm <span class="my-name">Ocen Christiopher.</span> I'm a web developer passionate about creating beautiful and functional websites.</p>
-      </div>
-    </section>
-    
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project-tile">
-          <h3>Project 1</h3>
-          <p>Description of Project 1</p>
-          <img src="project1.jpg" alt="Project 1 Screenshot">
-        </div>
-        <div class="project-tile">
-          <h3>Project 2</h3>
-          <p>Description of Project 2</p>
-          <img src="project2.jpg" alt="Project 2 Screenshot">
-        </div>
-      </div>
-    </section>
-    
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <div class="social-icons">
-          <a href="https://twitter.com/ocen_chris" target="_blank"><img src="./images/twitter.png" alt="Twitter icon"></a>
-          <a href="https://facebook.com/ocen.chris" target="_blank"><img src="./images/facebook.png" alt="Facebook icon"></a>
-          <a href="https://linkedin.com/in/ocen.chris" target="_blank"><img src="./images/linkedin.png" alt="Linkedin icon"></a>
-          <a href="https://instagram.com/ocen.chris" target="_blank"><img src="./images/instagram.png" alt="instagram icon"></a>
-        </div>
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; 2023 Ocen Christopher</p>
-  </footer>
+    <header>
+        <nav>
+          <a id="site-name" href="#">Christopher</a>
+        </nav>
+        <nav class="navbar">
+          <a href="#welcome">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <input type="checkbox" id="toggle-menu">
+          <label for="toggle-menu" class="menu-icon">&#9776;</label>
+        </nav>
+        
+      </header>
+
+    <main>
+        <section id="welcome">
+            <div class="container">
+                <div class="item">
+                    <img src="./images/Ocen-Christopher.png" alt="Profile Picture" class="profile-img">
+                </div>
+                <div class="item">
+                    <p class="hero-text">Hi, I'm <span class="name">Ocen Christopher.</span></p>
+                    <p class="hero-text item"> I'm a web developer passionate about creating beautiful and functional
+                        websites.</p>
+                    <div class="social-icons item">
+                        <a href="https://twitter.com/ocen_chris" target="_blank"><img src="./images/twitter.png"
+                                alt="Twitter icon"> Twitter</a>
+                        <a href="https://facebook.com/ocen.chris" target="_blank"><img src="./images/facebook.png"
+                                alt="Facebook icon">Facebook</a>
+                        <a href="https://linkedin.com/in/ocen.chris" target="_blank"><img src="./images/linkedin.png"
+                                alt="Linkedin icon">Linkedin</a>
+                        <a href="https://instagram.com/ocen.chris" target="_blank"><img src="./images/instagram.png"
+                                alt="instagram icon">instagram</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="container">
+                <div class="item project-card">
+                    <img class="project-screenshot" src="./images/ssebolule.png" alt="Project 1 Screenshot">
+                    <div class="item">
+                        <h3>Ssebo Lule</h3>
+                        <a href="https://ssebolule.com">ssebolule.com</a>
+                    </div>
+                </div>
+                <div class="item project-card">
+                    <img class="project-screenshot" src="./images/UAOG-logo.png" alt="Project 1 Screenshot">
+                    <div class="item">
+                        <h3>AOG Uganda</h3>
+                        <a href="https://aoguganda.org">aoguganda.org</a>
+                    </div>
+                </div>
+                <div class="item project-card">
+                    <img class="project-screenshot" src="./images/sharing-seeds-logo.png" alt="Project 1 Screenshot">
+                    <div class="item">
+                        <h3>Sharing Seed</h3>
+                        <a href="https://sharingseed.org">sharingseed.org</a>
+                        
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item project-card">
+                    <img class="project-screenshot" src="./images/jeff-4nes-logo.png" alt="Project 1 Screenshot">
+                    <div class="item">
+                        <h3>Jeff Phones</h3>
+                        <a href="https://jeff4nes.com">jeff4nes.com</a>
+                    </div>
+                </div>
+        </section>
+
+        <!--Testimonial slider-->
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Ocen Christopher</p>
+    </footer>
 </body>
+
 </html>

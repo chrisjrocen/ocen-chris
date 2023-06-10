@@ -6,49 +6,248 @@
   }
   
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abril Fatface', cursive, 'Roboto', sans-serif;
+    font-weight: 200;
   }
   
+  h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 10%;
+  }
   header {
+    display: flex;
     position: fixed;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
     width: 100%;
-    background-color: #333;
-    padding: 10px;
+    background-color: black;
+    padding: 1em 5% 1em 5%;
   }
   
   .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
   }
   
   .navbar a {
     color: #fff;
     text-decoration: none;
+    padding: 0 2em;
+    font-size: 1.5em;
   }
   
-  .main {
-    margin-top: 60px;
+  .navbar a:hover {
+    color: #d4d4d5;
   }
   
-  .section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .menu-icon {
+    display: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  #site-name {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  
+  #site-name:hover {
+    color: #d4d4d5;
+  }
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .navbar a {
+      display: block;
+      padding: 0.5em 2em;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .navbar input[type="checkbox"] {
+      display: block;
+    }
+  
+    .navbar input[type="checkbox"]:checked ~ a:not(.menu-icon) {
+      display: block;
+    }
+
+    #site-name {
+        display: none;
+      }
+
+  }
+  
+  footer {
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: 1em;
+    color: #d4d4d5;
     text-align: center;
   }
   
-  .container {
-    max-width: 800px;
+  
+  section {
+    max-width: 90%;
+    height: 100vh;
     margin: 0 auto;
-    padding: 0 20px;
+    padding-bottom: 5%;
+    position: relative;
+    bottom: 0;
+    border-radius: 1%;
   }
   
-  .profile-img {
+  .container {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #welcome>.container {
+    grid-template-columns: auto auto;
+  }
+  
+  #projects>.container {
+    grid-template-columns: auto auto;
+  }
+  
+  .item {
+    margin: 10% auto 0 auto;
+  }
+  
+  .hero-text {
+    font-size: 2em;
+  }
+  
+  .name {
+    font-weight: bolder;
+    font-style: italic;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    border-radius: 5%;
+    padding: 1em;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d4d4d5;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .project-card {
+    border-style: solid;
+    border-color: #d4d4d5;
+    border-width: 2px;
+    border-radius: 5%;
+    padding: 10% 5%;
+    margin: 0 10% 25% 10%;
+    grid-row: 1/2;
+    height: 400px;
+    align-items: b;
+  }
+  
+  .project-card:hover {
+    background-color: #d4d4d5;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .project-screenshot {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    margin-bottom
+  }
+  
+  #contact {
+    height: auto;
+  }
+  
+  .social-icons > a {
+    font-size: 1.2em;
+    width: 2em;
+    height: 2em;
+    padding-right: 1em;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .testimonial {
+    width: 500px;
+    min-height: 315px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+    
+  /* Adjust styles for smaller screens */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2em;
+      padding-top: 5%;
+    }
+  
+    header {
+      padding: 0.5em 2% 0.5em 2%;
+    }
+  
+    .navbar a {
+      font-size: 1em;
+      padding: 0 1em;
+    }
+  
+    #site-name {
+      font-size: 1.5em;
+    }
+  
+    .item {
+      margin: 5% auto 0 auto;
+    }
+  
+    .project-card {
+      margin: 0 5% 15% 5%;
+    }
+  
+    .project-screenshot {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .testimonial {
+      width: 90%;
+    }
+  }
+  
+  /* Add animations to items with class "item" */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .item, h2 {
+    animation: fadeIn 1s ease-in-out;
+  }
   
